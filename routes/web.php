@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BayanController;
+use App\Http\Controllers\NewsLetterController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +17,7 @@ use App\Http\Controllers\BayanController;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('home');
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::resource('bayan',BayanController::class);
+Route::resource('newsletter',NewsLetterController::class)->only(['store']);

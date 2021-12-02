@@ -99,8 +99,17 @@
           <div class="col-lg-6">
             <h4>Join Our Newsletter</h4>
             <p>By providing your email below you will get news about our madrasa </p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+            <form action="{{route('newsletter.store')}}" method="post">
+              @csrf
+              @method('POST')
+              <label>
+                @error('email')
+                {{$message}}
+                @enderror
+              </label>
+              <input type="email" name="email" required>
+              <input type="submit" value="Subscribe">
+              {{session('message')}}
             </form>
           </div>
         </div>
@@ -136,17 +145,15 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Courses</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Tahleem Balghan <small>Male</small></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Tahleem Balghan <small>Female</small></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Nazra</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Social Networks</h4>
-            <p>Dummy text</p>
+            <p>Our social media accounts</p>
             <div class="social-links mt-3">
               
               <a href="https://www.facebook.com/AbdulMateen989/" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -166,7 +173,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bizland-bootstrap-business-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">ABDUL BAST</a>
+        Designed by <a href="https://www.facebook.com/basit.abdulbasit.754/">ABDUL BAST</a>
       </div>
     </div>
   </footer><!-- End Footer -->
