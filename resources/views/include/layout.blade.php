@@ -65,7 +65,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="{{('index')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Courses</a></li>
+          <li><a class="nav-link scrollto" href="{{route('course')}}">Courses</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Mazameen</a></li>
           
           <li class="dropdown"><a href="#"><span>Audio</span> <i class="bi bi-chevron-down"></i></a>
