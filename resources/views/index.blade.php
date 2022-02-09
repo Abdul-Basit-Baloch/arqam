@@ -4,13 +4,13 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Welcome to <span>Madrasa Dar-e-Arqam</span></h1>
-      <h2>We provide education that leads to a great life</h2>
-      <div class="d-flex">
+      <h1>{{__('index.welcome')}} <span>{{__('index.welcome1')}}</span></h1>
+      <h2>{{__('index.head')}}</h2>
+      {{-- <div class="d-flex">
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
         <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
       </div>
-    </div>
+    </div> --}}
   </section><!-- End Hero -->
 
   <main id="main">
@@ -39,15 +39,16 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Tahleem Balghan<br><small>Male</small></a></h4>
-              <p>This course is designed for those who are 15+ for more deatails <a href="#"> click here.</a></p>
+              <h4><a href="{{route('course')}}">Ilm-e-deen<br></a></h4>
+              <h4><a href="{{route('course')}}">Tahleem-e-Balghan<br><small>Male</small></a></h4>
+              <p>This course is designed for those who are 15+ for more deatails <a href="{{route('course')}}"> click here.</a></p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Tahleem balghan <small>Female</small></a></h4>
+              <h4><a href="{{route('course')}}">Tahleem-e-balghan <small>Female</small></a></h4>
               <p>This course is designed for those who are 15+ for more deatails <a href="#"> click here.</a></p>
             </div>
           </div>
@@ -55,7 +56,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Nazra</a></h4>
+              <h4><a href="{{route('course')}}">Nazra</a></h4>
               <p>This course has no age criteria everyone is eligible for this course. For more details<a href="#"> click here.</a></p>
             </div>
           </div>
@@ -80,7 +81,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="#" class="testimonial-img" alt="">
-                <h3>Maulana Abdul Mateen</h3>
+                <h3>Molana Abdul Mateen</h3>
                 <h4>Principal &amp; Founder</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
@@ -93,8 +94,8 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="#" class="testimonial-img" alt="">
-                <h3>Maulana Muhammad Yousuf</h3>
-                <h4>Instructor</h4>
+                <h3>Molana Muhammad Yousuf</h3>
+                <h4>Teacher</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   TEXT GOES HERE
@@ -107,7 +108,7 @@
               <div class="testimonial-item">
                 <img src="#" class="testimonial-img" alt="">
                 <h3>Mufti Muhammad Asad</h3>
-                <h4>Instructor</h4>
+                <h4>Teacher</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   TEXT GOES HERE
@@ -119,8 +120,8 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="#" class="testimonial-img" alt="">
-                <h3>Maulana Abdul Latif</h3>
-                <h4>Instructor</h4>
+                <h3>Molana Abdul Latif</h3>
+                <h4>Teacher</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   TEXT GOES HERE
@@ -132,8 +133,47 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="#" class="testimonial-img" alt="">
-                <h3>Maulana Bilal</h3>
-                <h4>Instructor</h4>
+                <h3>Molana Bilal</h3>
+                <h4>Teacher</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  TEXT GOES HERE
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+            
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="#" class="testimonial-img" alt="">
+                <h3>Hafiz Maqbool</h3>
+                <h4>Teacher</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  TEXT GOES HERE
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="#" class="testimonial-img" alt="">
+                <h3>Molana Munawwar</h3>
+                <h4>Teacher</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  TEXT GOES HERE
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="#" class="testimonial-img" alt="">
+                <h3>Molana Abdullah</h3>
+                <h4>Teacher</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   TEXT GOES HERE
@@ -154,8 +194,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Latest</h2>
-          <h3>Check our <span>Bayan, Article & Book</span></h3>
+          <h2>Audios</h2>
+          <h3>Check our <span>Audios</span></h3>
           <p>Here You will find Our latest News from here.</p>
         </div>
 
@@ -163,9 +203,10 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Bayan</li>
-              <li data-filter=".filter-card">Article</li>
-              <li data-filter=".filter-web">Book</li>
+              <li data-filter=".filter-app">Audios</li>
+              <li data-filter=".filter-card">Darse Quran</li>
+              <li data-filter=".filter-web">Darse Hadees</li>
+              <li data-filter=".filter-web">Fiqh</li>
             </ul>
           </div>
         </div>
@@ -265,97 +306,45 @@
         </div>
 
       </div>
+
+      
     </section><!-- End Portfolio Section -->
 
+       <!-- ======= Portfolio Section ======= -->
+       <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Publication</h2>
+            <h3>Check our <span>Publications</span></h3>
+            <p>Here You will find Our latest Publications from here.</p>
+          </div>
+  
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-card">Books</li>
+                <li data-filter=".filter-app">Articles</li>
+                
+                <li data-filter=".filter-web">Notes</li>
+                
+              </ul>
+            </div>
+          </div>
+  
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+   
+
+          </div>
+
+        </div>
+  
+        
+      </section><!-- End Portfolio Section -->
+  
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Faculty</h2>
-          <h3>Our  <span>Faculty</span></h3>
-          <p>Our faculties are well qualified and masters in their subjects</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/icon.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Maulana A.Mateen</h4>
-                <span>Principal</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/icon.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Maulana M.Yousuf</h4>
-                <span>Instructor</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/icon.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Mufti Asad</h4>
-                <span>Instructor</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/icon.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Maulana A.Latif</h4>
-                <span>Instructor</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
-
+    
     <!-- ======= Pricing Section ======= -->
    
     <!-- ======= Frequently Asked Questions Section ======= -->
@@ -457,7 +446,7 @@
         <div class="row" data-aos="fade-up" data-aos-delay="100">
 
           <div class="col-lg-6 ">
-            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.6892050574043!2d67.00437271423486!3d24.874462350823975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f11af629fdf%3A0xb97a560b65cb512f!2sMadrasa%20Dar-e-Arqam!5e0!3m2!1sen!2s!4v1644367447338!5m2!1sen!2s" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
           </div>
 
           <div class="col-lg-6">

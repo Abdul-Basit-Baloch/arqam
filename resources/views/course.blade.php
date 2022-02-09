@@ -11,27 +11,27 @@
       </div>
 
       <div class="row" data-aos="fade-up" data-aos-delay="100">
-        <div class="col-lg-3">
+        <div class="col-lg-2">
           <div class="info-box mb-4">
             <i class="bx bx-book"></i>
-            <h3>Tafseer</h3>
-            <p>Amma Para</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="info-box  mb-4">
-            <i class="bx bx-book"></i>
-            <h3>Arabic Grammar</h3>
-            <p>Basics</p>
+            <h3>Tajweed</h3>
+            <p>Noorani Qaida</p>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-6">
           <div class="info-box  mb-4">
             <i class="bx bx-book"></i>
-            <h3>Hadith</h3>
-            <p>40 Hadith</p>
+            <h3>Tafseer</h3>
+            <p>Amma Para</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <div class="info-box  mb-4">
+            <i class="bx bx-book"></i>
+            <h3>Hadees</h3>
+            <p>40 Hadees</p>
             
           </div>
         </div>
@@ -39,8 +39,8 @@
         <div class="col-lg-2 col-md-6">
           <div class="info-box  mb-4">
             <i class="bx bx-book"></i>
-            <h3>Tajweed</h3>
-            <p>Noorani Qaida</p>
+            <h3>Arabic</h3>
+            <p>Basic</p>
             
           </div>
         </div>
@@ -50,6 +50,15 @@
             <i class="bx bx-book"></i>
             <h3>Fiqh</h3>
             <p>Tahleem ul Islam</p>
+            
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <div class="info-box  mb-4">
+            <i class="bx bx-book"></i>
+            <h3>Seerat</h3>
+            <p>Seerat</p>
             
           </div>
         </div>
@@ -86,8 +95,8 @@
             <div class="col-lg-2 col-md-6">
               <div class="info-box  mb-4">
                 <i class="bx bx-book"></i>
-                <h3>Hadith</h3>
-                <p>40 Hadith</p>
+                <h3>Hadees</h3>
+                <p>40 Hadees</p>
                 
               </div>
             </div>

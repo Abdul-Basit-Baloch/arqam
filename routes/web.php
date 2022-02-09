@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BayanController;
 use App\Http\Controllers\NewsLetterController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,9 +18,16 @@ use App\Http\Controllers\CourseController;
 */
 
 Route::get('/', function () {
+    
     return view('index');
-})->name('home');
+})->name('index');
+Route::get('/about-us', function () {
+    return view('index');
+})->name('about');
+
 Route::get('/course',  [CourseController::class, 'index'])->name('course');
+Route::get('/contact',  [ContactController::class, 'index'])->name('contact');
+
 
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::resource('bayan',BayanController::class);

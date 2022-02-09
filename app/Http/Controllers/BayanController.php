@@ -15,10 +15,10 @@ class BayanController extends Controller
     public function index()
     {
         $bayans = Bayan::all();
-        // print_r($bayans);
+        
         $data = compact('bayans');
         
-          return view('admin.bayan.index',$data);
+          return view('admin.bayan.index')->with($data);
     }
 
     /**
@@ -28,7 +28,7 @@ class BayanController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.bayan.create');
     }
 
     /**
